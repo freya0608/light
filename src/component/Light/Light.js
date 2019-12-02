@@ -4,7 +4,7 @@
  动画callback只支持1.x版本的TransitionGroup
  */
 import React,{Component} from 'react';
-import './template-component.css';
+import './light.css';
 const styles = {
     container: {}
 };
@@ -12,16 +12,16 @@ const styles = {
 //import {TweenMax} from "gsap";
 //import PropTypes from 'prop-types';
 
-class TemplateComponent extends React.Component {
+class Light extends React.Component {
     static defaultProps = {
         ...Component.defaultProps
     }
-    static propTypes = {}
+
     render() {
         return (
-            <div ref={this.dom}></div>
+            <div ref={this.dom}>light</div>
         );
     }
 }
 
-export default TemplateComponent;
+export default Light;
